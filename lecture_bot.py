@@ -52,7 +52,7 @@ def mainfunc():
 
 
   driver.switch_to.frame("thinIframe")
-  username = "68 vishal"
+  username = "your_name"
   precap = 'fgdfgd' # predefined captcha 
   driver.find_element(By.XPATH , '//*[@id="meetingSimpleContainer"]/div[3]/div[2]/div/input').send_keys(username)  # myname
   driver.find_element(By.XPATH , '//*[@id="meetingSimpleContainer"]/div[3]/div[3]/div/div[1]/div/input').send_keys(precap)  # captcha
