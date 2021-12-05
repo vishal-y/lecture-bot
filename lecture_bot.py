@@ -72,31 +72,31 @@ def mainfunc():
   driver.quit()
 
 
-# def record():
-#     print("Recording will start in 15 second")
-#     keyboard.press_and_release('Alt+win+r')   
+def record():
+     print("Recording will start in 15 second")
+     keyboard.press_and_release('Alt+win+r')   
 
 
 
-# print("Do you want to record screen")
-# ans = input("yes/no : ")
+print("Do you want to record screen")
+ans = input("yes/no : ")
 
-# if ans=="yes":
-#   # record()
-#   mainfunc()
+ if ans=="yes":
+   record()
+   mainfunc()
 
 mainfunc()
 
-# else:
-#   # mainfunc()
-#   print("Bot starting in 5 sec...")
-#   t=4
-#   while t > 0:
-#         print(f"starting in {t} ..." )
-#         t -= 1
-#         time.sleep(1)
-#   print("started")
-#   mainfunc()
+ else:
+   mainfunc()
+   print("Bot starting in 5 sec...")
+   t=4
+   while t > 0:
+         print(f"starting in {t} ..." )
+         t -= 1
+         time.sleep(1)
+   print("started")
+   mainfunc()
 
 
 # x = datetime.datetime.now()
