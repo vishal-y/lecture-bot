@@ -7,7 +7,6 @@ import time
 import datetime
 from selenium.webdriver.chrome.options import Options
 import keyboard
-# from smartapi import SmartConnect
 
 
 
