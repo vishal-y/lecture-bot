@@ -4,7 +4,7 @@ from selenium.webdriver.chrome import options
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
-import keyboard
+# import keyboard
 import time
 
 Permission = Options()
@@ -15,19 +15,19 @@ Permission.add_experimental_option("prefs", { \
     "profile.default_content_setting_values.notifications": 2 
   })
 
-username = input("enter your name with roll no ex:-(68 vishal)  : ")
+# username = input("enter your name with roll no ex:-(68 vishal)  : ")
 
 def mainfunc(num):
     if(num==0):
-        print("Do you want to record screen")
-        ans = input("yes/no : ")
-        if ans=="yes":
-            print("This lec will be recorded")
-            driver.maximize_window()
-            keyboard.press_and_release('Alt+win+r') 
+#         print("Do you want to record screen")
+#         ans = input("yes/no : ")
+#         if ans=="yes":
+#             print("This lec will be recorded")
+#             driver.maximize_window()
+#             keyboard.press_and_release('Alt+win+r') 
 
-        else:
-            print("Bot starting in 5 sec...")
+#         else:
+#             print("Bot starting in 5 sec...")
         t=4
         while t > 0:
             print(f"starting in {t} ..." )
