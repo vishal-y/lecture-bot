@@ -15,7 +15,7 @@ Permission.add_experimental_option("prefs", { \
     "profile.default_content_setting_values.notifications": 2 
   })
 
-lec = input("enter sub name : ")
+username = input("enter your name with roll no ex:-(68 vishal)  : ")
 
 def mainfunc(num):
     if(num==0):
@@ -43,7 +43,6 @@ def mainfunc(num):
     driver.find_element(By.XPATH , '//*[@id="push_download_join_by_browser"]').click()  #join from browser
     time.sleep(3)
     driver.switch_to.frame("thinIframe")
-    username = "68 vishal"
     time.sleep(1)
     driver.find_element(By.XPATH , '//*[@id="meetingSimpleContainer"]/div[3]/div[2]/div/input').send_keys(username)  # myname
     driver.find_element(By.XPATH , '//*[@id="guest_next-btn"]').click()
@@ -51,23 +50,10 @@ def mainfunc(num):
     driver.find_element(By.XPATH , '//*[@id="meetingSimpleContainer"]/div[3]/div[2]/div[1]/div/div/button').click()  #disable mic
     driver.find_element(By.XPATH , '//*[@id="interstitial_join_btn"]').click() # join
     print("done till here")
-    time.sleep(2) # lecture end time
+    time.sleep(3000) # lecture end time
     driver.quit()
 
 def again():
-    if lec=="oop":
-        mainfunc(1)
-
-    elif lec=="wp":
-        mainfunc(1)
-
-    elif lec=="mm":
-        mainfunc(1)
-
-    elif lec=="maths":
-        mainfunc(1)
-
-    else:
         mainfunc(1)
 
 mainfunc(0)
