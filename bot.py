@@ -15,7 +15,7 @@ Permission.add_experimental_option("prefs", { \
     "profile.default_content_setting_values.notifications": 2 
   })
 
-username = input("enter your name with roll no ex:-(68 vishal)  : ")
+username = input("enter your name with roll no eg:-(68 vishal)  : ")
 
 def mainfunc(num):
     if(num==0):
