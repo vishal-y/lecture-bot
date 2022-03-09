@@ -19,15 +19,15 @@ username = input("enter your name with roll no eg:-(68 vishal)  : ")
 
 def mainfunc(num):
     if(num==0):
-        print("Do you want to record screen")
-        ans = input("yes/no : ")
-        if ans=="yes":
-            print("This lec will be recorded")
-            driver.maximize_window()
-            keyboard.press_and_release('Alt+win+r') 
+#         print("Do you want to record screen")
+#         ans = input("yes/no : ")
+#         if ans=="yes":
+#             print("This lec will be recorded")
+#             driver.maximize_window()
+#             keyboard.press_and_release('Alt+win+r') 
 
-        else:
-            print("Bot starting in 5 sec...")
+#         else:
+#             print("Bot starting in 5 sec...")
         t=4
         while t > 0:
             print(f"starting in {t} ..." )
@@ -35,7 +35,8 @@ def mainfunc(num):
             time.sleep(1)
         print("started")
 
-    driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), chrome_options=Permission)  #chrome_options=block
+#  driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), chrome_options=Permission)  #chrome_options=block
+    driver = webdriver.Chrome(executable_path="chromedriver.exe", chrome_options=Permission)
     url="https://meetingsapac10.webex.com/webappng/sites/meetingsapac10/meeting/download/e78c8f71917e419dbc247a2c37c51d5f?siteurl=meetingsapac10&MTID=md9fe6772ba1c385563e2d5aac4c9bdf4"
     driver.minimize_window()
     driver.get(url)
